@@ -35,6 +35,6 @@ public class School {
 		student2.study();
 		student3.sleep();
 		teacher1.yell();
-		
+		//break until 8:40
 	}
 }
