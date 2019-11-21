@@ -10,6 +10,7 @@ public class FamiliesDemo {
 		SmithMember.lastName = "Smith";
 		member1.gender = 'M';
 		member1.salary = 5000;
+		SmithMember.addIncome(member1.salary);
 
 		member1.memberInfo();
 
@@ -19,6 +20,7 @@ public class FamiliesDemo {
 //		member2.lastName = "Smith";
 		member2.gender = 'F';
 		member2.salary = 6000;
+		SmithMember.addIncome(member2.salary);
 
 		member2.memberInfo();
 
@@ -38,6 +40,9 @@ public class FamiliesDemo {
 		baby.salary = 500;
 		System.out.println("There are " + SmithMember.count + " members in the " + SmithMember.lastName + " family.");
 		baby.memberInfo();
+		SmithMember.addIncome(baby.salary);
+
+		System.out.println(SmithMember.lastName + " family's income is: " + SmithMember.familyIncome);
 
 		System.out.println();
 		System.out.println("Let's \"create\" James Family members!");
@@ -55,7 +60,7 @@ public class FamiliesDemo {
 		jMember2.firstName = "Savannah";
 		jMember2.gender = 'F';
 		jMember2.salary = 200;
-		
+
 		jMember1.memberInfo();
 		jMember2.memberInfo();
 
