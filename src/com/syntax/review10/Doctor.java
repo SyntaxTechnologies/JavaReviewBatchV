@@ -7,6 +7,10 @@ public class Doctor {
 	public String address;
 	public String dayOff;
 	
+	public Doctor() {
+		
+	}
+	
 //	public Doctor(int a, String b, String c) {
 //	
 //	}
