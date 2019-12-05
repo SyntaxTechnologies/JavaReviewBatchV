@@ -1,4 +1,4 @@
-package review11;
+package com.syntax.review11;
 
 public class World {
 	public static void main(String[] args) {
