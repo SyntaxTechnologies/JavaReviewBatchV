@@ -1,6 +1,6 @@
 package com.syntax.review11;
 
-public class Human {
+public abstract class Human {
 	String name;
 	int age;
 	int weight;
@@ -25,12 +25,8 @@ public class Human {
 		this.weight = weight;
 	}
 
-	public String greeting() {
-		return "Hello";
-	}
+	public abstract String greeting();
 
-	public void talk() {
-		System.out.println("Kak dilla.");
-	}
+	public abstract void talk();
 
 }
