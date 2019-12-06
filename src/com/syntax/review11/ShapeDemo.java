@@ -38,6 +38,22 @@ public class ShapeDemo {
 		}
 		System.out.println("Total perimeter is " + totalPerimeter);
 
+		System.out.println("--- 3Dimensional Shape ---");
+
+		Shape3D sphere = new Sphere(3, "red");
+		System.out.println("Sphere Area = " + sphere.calculateArea());
+		System.out.println("Sphere Volume = " + sphere.calculateVolume());
+
+		System.out.println();
+
+		Shape3D cube = new Cube(3, "pink");
+		System.out.println("Cube Area = " + cube.calculateArea());
+		System.out.println("Cube Volume = " + cube.calculateVolume());
+
+		// Do the same array example for 3D Shapes
+		System.out.println();
+		System.out.println("--- 3Dimensional Shape array ---");
+
 	}
 
 }
