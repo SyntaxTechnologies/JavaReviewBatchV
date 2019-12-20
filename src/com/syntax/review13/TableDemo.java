@@ -40,11 +40,31 @@ public class TableDemo {
 			}
 		}
 		
-//		List<Map<String, String>> listOfMaps = createListOfMaps();
+		//Homework Addition
+		System.out.println("\n---createListOfMaps---");
+		List<Map<String, String>> listOfMaps = createListOfMaps();
+				
+		Iterator<Map<String, String>> iterator = listOfMaps.iterator();
+		while(iterator.hasNext()) {
+			Map<String, String> map = iterator.next();
+			String country = map.get("Country");
+			if (country.equals("Germany")) {
+				System.out.println(map);
+			}
+		}
 
 	}
 	
-	//Create a method that returns a List of Maps
+	//Homework Addition
+	public static List<Map<String, String>> createListOfMaps() {
+		List<Map<String, String>> listOfMaps = new ArrayList<Map<String,String>>();
+		
+		listOfMaps.add(createMap1());
+		listOfMaps.add(createMap2());
+		listOfMaps.add(createMap3());
+		
+		return listOfMaps;
+	}
 
 	public static Map<String, String> createMap1() {
 		Map<String, String> map1 = new HashMap<>();
