@@ -26,11 +26,10 @@ public class CollectionDemo {
 		studentList.add(new Student(2345, 18, "Adam Smith"));
 		studentList.add(new Student(3456, 18, "Mary Lamb"));
 		studentList.add(new Student(4567, 19, "Sasha Kallashnikov"));
-		
+
 		Student thirdStudent = new Student(6758, 18, "Gaukhar Koka");
 		studentList.add(2, thirdStudent);
-		
-		
+
 		// studentList.add(4);
 		System.out.println(studentList.size());
 
@@ -64,14 +63,14 @@ public class CollectionDemo {
 		if (studentIterator.hasNext()) {
 			Student s5 = studentIterator.next();
 		}
-		
+
 		System.out.println("---Using iterator 2---");
 		while (studentIterator2.hasNext()) {
 //			Student student = studentIterator2.next();
 //			student.displayInfo();
 			studentIterator2.next().displayInfo();
 		}
-		
+
 //				LIST
 //		ArrayList   LinkedList
 //		
@@ -96,4 +95,8 @@ class Student {
 		System.out.println("Student name " + name + " age " + age + " student number is " + studentNumber);
 	}
 
+	@Override
+	public String toString() {
+		return name + " " + age + " " + studentNumber;
+	}
 }
