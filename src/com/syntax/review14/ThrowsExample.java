@@ -6,7 +6,7 @@ public class ThrowsExample {
 		try {
 			int res = divide(10, 0);
 			System.out.println("result is " + res);
-		} catch (Exception ex) {
+		} catch (ArithmeticException ex) {
 			System.out.println("Division by zero in Main method");
 			System.out.println(ex);
 		}
@@ -14,7 +14,7 @@ public class ThrowsExample {
 		System.out.println("Happy Ending");
 	}
 
-	public static int divide(int a, int b) throws Exception {
+	public static int divide(int a, int b) throws ArithmeticException {
 		int result = 0;
 		
 		try {
